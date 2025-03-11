@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title> <!-- Sets the webpage title -->
+  </head>
+  <body>
+    <!-- First row: Numbers 1-3 and Addition (+) -->
+    <p>
+      <button onclick="
+        calculation += '1';
+        console.log(calculation);
+      ">1</button>
+      <button onclick="
+        calculation += '2';
+        console.log(calculation);
+      ">2</button>
+      <button onclick="
+        calculation += '3';
+        console.log(calculation);
+      ">3</button>
+      <button onclick="
+        calculation += ' + ';
+        console.log(calculation);
+      ">+</button>
+    </p>
+    <!-- Second row: Numbers 4-6 and Subtraction (-) -->
+    <p>
+      <button onclick="
+        calculation += '4';
+        console.log(calculation);
+      ">4</button>
+      <button onclick="
+        calculation += '5';
+        console.log(calculation);
+      ">5</button>
+      <button onclick="
+        calculation += '6';
+        console.log(calculation);
+      ">6</button>
+      <button onclick="
+        calculation += ' - ';
+        console.log(calculation);
+      ">-</button>
+    </p>
+    <!-- Third row: Numbers 7-9 and Multiplication (*) -->
+    <p>
+      <button onclick="
+        calculation += '7';
+        console.log(calculation);
+      ">7</button>
+      <button onclick="
+        calculation += '8';
+        console.log(calculation);
+      ">8</button>
+      <button onclick="
+        calculation += '9';
+        console.log(calculation);
+      ">9</button>
+      <button onclick="
+        calculation += ' * ';
+        console.log(calculation);
+      ">*</button>
+    </p>
+    <!-- Fourth row: Number 0, Decimal (.), Equals (=), and Division (/) -->
+    <p>
+      <button onclick="
+        calculation += '0';
+        console.log(calculation);
+      ">0</button>
+      <button onclick="
+        calculation += '.';
+        console.log(calculation);
+      ">.</button>
+      <!-- The "=" button evaluates the expression -->
+      <button onclick="
+        try {
+          calculation = eval(calculation); // Evaluates the entered calculation
+          console.log(calculation);
+        } catch (error) {
+          console.log('Error: Invalid Calculation');
+          calculation = '';
+        }
+      ">=</button>
+      <button onclick="
+        calculation += ' / ';
+        console.log(calculation);
+      ">/</button>
+    </p>
+    <!-- Clear button to reset calculation -->
+    <p>
+      <button onclick="
+        calculation = '';
+        console.log('Cleared Calculation');
+      ">Clear</button>
+    </p>
+    <script>
+      // Stores the calculation as a string
+      let calculation = '';
+    </script>
+  </body>
+</html>
