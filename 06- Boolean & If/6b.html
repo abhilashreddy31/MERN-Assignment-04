@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greeting Based on Time</title> <!-- Sets the webpage title -->
+  </head>
+  <body>
+    <script>
+      // The 'hour' variable determines the time of day.
+      const hour = 17; // Example: 5 PM (24-hour format)
+      // Check the time and display an appropriate greeting
+      if (hour >= 6 && hour <= 12) {
+        console.log('Good morning!'); // 6 AM - 12 PM
+      } else if (hour >= 13 && hour <= 17) {
+        console.log('Good afternoon!'); // 1 PM - 5 PM
+      } else {
+        console.log('Good night!'); // All other times (evening & night)
+      }
+    </script>
+  </body>
+</html>

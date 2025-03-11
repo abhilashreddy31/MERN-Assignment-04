@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personalized Greeting</title> <!-- Sets the webpage title -->
+  </head>
+  <body>
+    <script>
+      // Define the current hour (change this value to test different greetings)
+      const hour = 20; // 8 PM (24-hour format)
+      // Define the user's name
+      const name = 'Abhi'; // Enter your name
+      // Check the time and display a personalized greeting
+      if (hour >= 6 && hour <= 12) {
+        console.log(`Good morning ${name}!`); // 6 AM - 12 PM
+      } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good afternoon ${name}!`); // 1 PM - 5 PM
+      } else {
+        console.log(`Good night ${name}!`); // All other times (evening & night)
+      }
+    </script>
+  </body>
+</html>

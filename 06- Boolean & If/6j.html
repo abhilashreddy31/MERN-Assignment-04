@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Flip Game</title> <!-- Sets the webpage title -->
+  </head>
+  <body>
+    <script>
+      // Generate a random number between 0 (including) and 1 (excluding)
+      const randomNumber = Math.random();
+      // Determine the coin flip result using a ternary operator
+      const result = randomNumber < 0.5 ? 'heads' : 'tails';
+      // Player's guess (change this value to test different outcomes)
+      const guess = 'heads';
+      // Check if the guess matches the result using a ternary operator
+      console.log(guess === result ? 'You win!' : 'You lose!');
+      // Log additional details for debugging
+      console.log(`Your guess: ${guess}`);
+      console.log(`Coin flip result: ${result}`);
+      console.log(`Generated number: ${randomNumber}`);
+    </script>
+  </body>
+</html>

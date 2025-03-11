@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discount Eligibility</title> <!-- Sets the webpage title -->
+  </head>
+  <body>
+    <script>
+      // Define the person's age (change this value to test different cases)
+      const age = 5; // Ex: 5 years old
+      // Define whether it's a holiday
+      const isHoliday = true; // Change to false to test non-holiday cases
+      // Check if the person qualifies for a discount
+      if ((age <= 6 || age >= 65) && !isHoliday) {
+        console.log('Discount'); // Eligible for discount only if it's NOT a holiday
+      } else {
+        console.log('No discount'); // No discount if it's a holiday or doesn't meet age criteria
+      }
+    </script>
+  </body>
+</html>

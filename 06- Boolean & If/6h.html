@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Flip Simulation</title> <!-- Sets the webpage title -->
+  </head>
+  <body>
+    <script>
+      // Generates a random number between 0 (including) and 1 (excluding)
+      const randomNumber = Math.random();
+      // Variable to store the coin flip result
+      let res;
+      // Determine whether the flip result is "heads" or "tails"
+      if (randomNumber < 0.5) {
+        res = 'heads';
+      } else {
+        res = 'tails';
+      }
+      // Log the result and the random number for reference
+      console.log(`Coin flip result: ${res}`);
+      console.log(`Generated number: ${randomNumber}`);
+    </script>
+  </body>
+</html>
